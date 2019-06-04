@@ -30,3 +30,17 @@ def courses(data):
     return(value)
 
 courses(data)
+
+def most_courses(data):
+    best=dict()
+    max=0
+    for x, y in data.items():
+        best[x]=len(data[x])
+        if best[x]>max:
+            max=best[x]
+            best_name=x
+    print(best_name,max)
+    return best_name
+
+
+most_courses(data)
