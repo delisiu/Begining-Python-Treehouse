@@ -8,9 +8,8 @@ def num_teachers(data):
     print(number)
     return(number)
 
-
 num_teachers(data)
-
+print("*"*40)
 
 def num_courses(data):
     courses=0
@@ -19,9 +18,8 @@ def num_courses(data):
     print(courses)
     return(courses)
 
-
 num_courses(data)
-
+print("*"*40)
 
 def courses(data):
     value=[]
@@ -30,6 +28,7 @@ def courses(data):
     return(value)
 
 courses(data)
+print("*"*40)
 
 def most_courses(data):
     best=dict()
@@ -42,5 +41,7 @@ def most_courses(data):
     print(best_name,max)
     return best_name
 
-
 most_courses(data)
+print("*"*40)
+
+
