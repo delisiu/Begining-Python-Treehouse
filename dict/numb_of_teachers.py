@@ -21,3 +21,12 @@ def num_courses(data):
 
 
 num_courses(data)
+
+
+def courses(data):
+    value=[]
+    for teacher in data.keys():
+        value=value+data[teacher]
+    return(value)
+
+courses(data)
