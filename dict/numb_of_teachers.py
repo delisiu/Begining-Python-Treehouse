@@ -10,3 +10,14 @@ def num_teachers(data):
 
 
 num_teachers(data)
+
+
+def num_courses(data):
+    courses=0
+    for teacher in data.keys():
+        courses=courses+len(data[teacher])
+    print(courses)
+    return(courses)
+
+
+num_courses(data)
