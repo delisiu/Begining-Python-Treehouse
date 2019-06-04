@@ -45,3 +45,12 @@ most_courses(data)
 print("*"*40)
 
 
+def stats(data):
+    list=[]
+    for x in data.keys():
+        list.append([x,len(data[x])])
+    print(list)
+    return list
+
+
+stats(data)
