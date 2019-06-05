@@ -1,0 +1,8 @@
+data="There are"
+
+def stringcases(string):
+    diff=string.lower(),string.upper(),string.title(),string[::-1]
+    print(diff)
+    return diff
+
+stringcases(data)
