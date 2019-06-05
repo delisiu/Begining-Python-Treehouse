@@ -1,0 +1,10 @@
+def combo(data1,data2):
+    list=[]
+    i=0
+    for i in range (0,len(data1)):
+        list.append((data1[i],data2[i]))
+    print(list)
+    return list        
+
+
+combo([1, 2, 3], 'abc')
