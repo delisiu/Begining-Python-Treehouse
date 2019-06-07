@@ -1,0 +1,21 @@
+# EXAMPLES:
+# move((1, 1, 10), (-1, 0)) => (0, 1, 10)
+# move((0, 1, 10), (-1, 0)) => (0, 1, 5)
+# move((0, 9, 5), (0, 1)) => (0, 9, 0)
+
+def move(player, direction):
+    x, y, hp = player
+    dx, dy = direction
+    if x+dx <0 or x+dx>9:
+        hp=hp-5
+    else:
+        x=x+dx
+    if y+dy <0 or y+dy>9:
+        hp=hp-5
+    else:
+        y=y+dy
+    print(x,y,hp)
+    return x, y, hp
+move((1, 1, 10), (-1, 0))
+move((0, 1, 10), (-1, 0))
+move((0, 9, 5), (0, 1))
