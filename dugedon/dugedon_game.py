@@ -45,7 +45,7 @@ def move_player(player,move):
 
 
 
-def get_moves(palyer):
+def get_moves(player):
     moves = ["LEFT","RIGHT","UP","DOWN"]
     x, y = player
     if x==0:
