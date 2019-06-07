@@ -25,3 +25,10 @@ def covers(find):
 
 covers({"variables"})
 
+def covers_all(find):
+    list=[]
+    for x,y in COURSES.items():
+        if find.issubset(y):
+           list.append(x) 
+    print (list)
+    return list
