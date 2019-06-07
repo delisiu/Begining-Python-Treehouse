@@ -1,0 +1,9 @@
+import random
+
+
+def get_locations(cells,numb):
+    list = random.sample(cells,numb)
+    print(list)
+    return list
+
+get_locations([2,4,6,7,9,12],3)
