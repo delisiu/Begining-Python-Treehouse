@@ -4,13 +4,13 @@ class Student:
 me = Student()
 print(me.name)
 
-
+---------------------------
 class Student:
     name = "Mac"
     def praise (self):
         return ("You're doing a great job {}".format(self.name))
 
-
+--------------------------------
     
 class Student:
     name = "Your Name"
@@ -25,8 +25,7 @@ class Student:
         if grade > 50:
             return self.praise()
         return self.reassurance()
-
-    
+  
     
     -------------
     
@@ -51,3 +50,14 @@ class Student:
             return self.praise()
         return self.reassurance()
         return self.reassurance()
+    
+    
+    ------------------
+    class RaceCar:
+    
+        def __init__(self, color, fuel_remaining, **kwargs):
+            self.color = color
+            self.fuel_remaining = fuel_remaining
+
+            for key, value in kwargs.items():
+                setattr(self, key, value)
